@@ -1,0 +1,74 @@
+<html>
+ <head>
+<title>
+JavaScript program to calculate multiplication and division of two numbers 
+</title>
+</head>
+<body>
+<form>
+1st Number : <input type="text" id="firstNumber"><br>
+2nd Number: <input type="text" id="secondNumber"><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply">
+<input type="button" onClick="divideBy()" Value="Divide">
+<input type="button" onClick="addNumbers()" Value="Add">
+<input type="button" onClick="subtractBy()" Value="Subtract">
+<input type="button" onClick="percentageBy()" Value="Percentage">
+<input type="button" onClick="squareBy()" Value="Square">
+<input type="button" onClick="powBy()" Value="Exponential power">
+<input type="button" onClick="squarerootBy()" Value="square root">
+</form>
+<SCRIPT>
+function multiplyBy()
+{
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 * num2;
+}
+
+ function addNumbers()
+                {
+                        num1 = document.getElementById("firstNumber").value;
+                        num2 = document.getElementById("secondNumber").value;
+                       document.getElementById("result").innerHTML = num1-(-num2);
+                      
+                }
+function subtractBy()
+{
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 - num2;
+}
+function percentageBy()
+{
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1/num2*100/1;
+}
+function divideBy()
+ {
+ num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1/ num2;
+}
+function squareBy(){
+num1 = document.getElementById("firstNumber").value;
+document.getElementById("result").innerHTML = num1*num1;
+}
+function powBy(){
+ num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+var value = Math.pow(num1,num2);
+document.getElementById("result").innerHTML =Math.pow(num1, num2)
+}
+function squarerootBy(){
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+ document.getElementById("result").innerHTML = Math.sqrt(num1);
+}
+</SCRIPT>
+<img src = "C:\Users\SDGT\OneDrive - Amity University\Bal Mahabharat.pdf">
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</body>
+</html>
